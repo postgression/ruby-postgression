@@ -12,20 +12,5 @@ Gem::Specification.new do |s|
   s.test_files    = s.files.grep(%r{^(test|spec|features)/})
   s.require_paths = ["lib"]
 
-  s.description = <<description
-    postgression makes running your tests against a real PostgreSQL database
-    a whole lot simpler.
-
-    Instead of running PostgreSQL server locally (or on your testing machine),
-    maintaining the server, credentials, etc... postgression instantly
-    provisions a new PostgreSQL database for your application to run tests
-    against: for free!
-
-    ruby-postgression is a simple CLI app that talks to the postgression
-    public API, and generates a temporary PostgreSQL database for usage
-    in your test code (or just general messing around).
-
-    postgression databases are automatically deleted after 30 minutes.
-    No information is logged by the service.
-description
+  s.description = 'ruby-postgression makes it really easy to provision PostgreSQL databases for testing'
 end
