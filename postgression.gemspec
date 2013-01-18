@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'postgression'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.summary     = 'A ruby client for the postgression API.'
   s.homepage    = 'http://www.postgression.com'
   s.date        = '2013-01-17'
