@@ -1,6 +1,12 @@
 require 'net/http'
 require 'uri'
 
-uri = URI.parse('http://api.postgression.com')
-res = Net::HTTP.get_response(uri)
-puts res.body
+module Postgression
+  URL = 'http://api.postgression.com'
+
+  def Postgression.provision
+    uri = URI.parse(URL)
+    res = Net::HTTP.get_response(uri)
+    res.body
+  end
+end
